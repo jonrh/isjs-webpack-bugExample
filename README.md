@@ -1,7 +1,9 @@
 # isjs-webpack-bugExample
 This repository is an example demonstration of a bug when requiring the brilliant
-library [is_js](http://arasatasaygin.github.io/is.js/) with the module
+library [is.js](http://arasatasaygin.github.io/is.js/) with the module
 bundler [webpack](http://webpack.github.io/).
+
+is.js issue: [Issue when requiring is.js with webpack #100](https://github.com/arasatasaygin/is.js/issues/100)
 
 ## How to reproduce
 To get started, clone this repository and make sure you have [node](https://nodejs.org/)
@@ -27,7 +29,7 @@ Module not found: Error: Cannot resolve module 'is' in C:\jonrh\isjs-webpack-bug
  @ ./~/is_js/is.js 8:8-13:10
 ```
 
-By commenting out the is_js require:
+By commenting out the is_js require in the *main.js* file:
 
 ```
 //var is = require("is_js");
