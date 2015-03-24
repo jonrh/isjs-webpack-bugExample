@@ -4,10 +4,11 @@ library [is_js](http://arasatasaygin.github.io/is.js/) with the module
 bundler [webpack](http://webpack.github.io/).
 
 ## How to reproduce
-To get started, [node](https://nodejs.org/) and [npm](https://www.npmjs.com/)
-have to be installed and be on the path. There are many ways to install but the
-simplest thing is to install node, npm will be set up as well. On the command
-prompt or terminal be located in this folder and type the following:
+To get started, clone this repository and make sure you have [node](https://nodejs.org/)
+and [npm](https://www.npmjs.com/) installed and on the path. There are many
+ways to install but the simplest thing is to install node, npm will be set up
+as a byproduct. On the command prompt or terminal be located in this folder and type
+the following:
 
 ```
 npm install
@@ -44,6 +45,12 @@ bundle.js  756 kB       0  [emitted]  main
     + 45 hidden modules
 ```
 
+This can also be observed when running the *bundle.js* file that webpack exported:
+
+```
+Fake IP: 153.254.86.13
+```
+
 ## Hacky fix
 Note, this is a **very** hacky "fix" I stumbled upon. In the *is.js* (in the
 *node_modules* folder) remove the following code (lines 6-14):
@@ -77,7 +84,13 @@ so it'll look like this:
 }
 ```
 
-I've no idea if this is save to do or not.
+I've no idea if this is save to do or not. But with this change and code
+uncommented in the *main.js* file this is the output when running *bundle.js*:
+
+```
+Fake IP: 18.150.12.218
+Is fake IP valid: true
+```
 
 ## File and folder descriptions
 * **main.js**: The example JavaScript code that generates the issue.
