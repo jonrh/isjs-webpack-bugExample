@@ -1,0 +1,21 @@
+{
+  "name": "isjs-webpack-bugExample",
+  "version": "0.0.1",
+  "author": "Jón Rúnar Helgason",
+  "description": "Demonstration of a bug when doing requiring is_js with webpack",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonrh/isjs-webpack-bugExample"
+  },
+  "scripts": {
+    "start": "webpack --watch"
+  },
+  "dependencies": {
+    "faker": "^2.1.2",
+    "is_js": "^0.7.3"
+  },
+  "devDependencies": {
+    "webpack": "^1.7.3"
+  }
+}
