@@ -1,4 +1,6 @@
 # isjs-webpack-bugExample
+**Note 2016.01.03**: This issue has now been fixed in [pull request #138](https://github.com/arasatasaygin/is.js/pull/138/) of the [is.js](https://github.com/arasatasaygin/is.js) library. Many thanks go to @arasatasaygin, @ryantemple, and others for their excellent work. 
+
 This repository is an example demonstration of a bug when requiring the brilliant
 library [is.js](http://arasatasaygin.github.io/is.js/) with the module
 bundler [webpack](http://webpack.github.io/).
